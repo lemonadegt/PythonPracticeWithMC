@@ -20,18 +20,19 @@ def loginprocess(originpw):
             inputpw = getpw()
 
 def changepwprocess(originpw):
+    chkchangepw = False
+
     if loginprocess(originpw):
         print("패스워드를 변경할 수 있습니다.")
-        chkchangepw = False
 
         while chkchangepw != True:
             newpw = input("새로 변경할 패스워드를 입력해 주세요 : ")
             if originpw == newpw:
                 print("기존 패스워드와 동일 합니다.")
             else:
+                #패스워드 확인 입력 받는 부분 추가
                 print("패스워드 변경이 완료되었습니다.")
                 chkchangepw = True
-
     return chkchangepw
 
 def exitprocess():
