@@ -13,16 +13,15 @@ while (selectednum < 0) or (selectednum > 2):
     selectednum = int(input("다시 선택해 주세요\n(가위 = 0, 바위 = 1, 보 = 2) : "))
     #selectednum = int(getpass.getpass("다시 선택해 주세요\n(가위 = 0, 바위 = 1, 보 = 2) : "))
 
-comselectednum = random.randint(0,2)
+#comselectednum = random.randint(0,2)
+
+if selectednum == rockscissorspaper.index(BO):
+    comselectednum = selectednum - 2
+else:
+    comselectednum = selectednum + 1
 
 print("당신의 선택은 " + rockscissorspaper[selectednum])
 print("컴퓨터의 선택은 " + rockscissorspaper[comselectednum])
-
-
-#16번 과제
-#컴퓨터가 항상 이기기
-#사용자의 선택 가리기
-
 
 '''
 print(rockscissorspaper)
