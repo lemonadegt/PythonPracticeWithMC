@@ -19,7 +19,7 @@ def makeblock(targetpos):
     y = targetpos.y + 50
     z = targetpos.z
     blocktype = 138
-    size = random(50, 100)
+    size = random.randint(50, 100)
     mc.setBlocks(x, y, z, x + size, y, z + size, blocktype)
     #금블록 생성
     #mc.setBlock()
