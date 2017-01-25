@@ -1,5 +1,4 @@
 import time
-import math
 import random
 from mcpi.minecraft import Minecraft
 mc = Minecraft.create()
@@ -16,13 +15,10 @@ def setposition(destpos):
 
 def makeblock(targetpos):
     x = targetpos.x
-    y = targetpos.y + 50
+    y = targetpos.y
     z = targetpos.z
-    blocktype = 138
-    size = random.randint(50, 100)
-    mc.setBlocks(x, y, z, x + size, y, z + size, blocktype)
-    #금블록 생성
-    #mc.setBlock()
+    blocktype = 41
+    mc.setBlocks(x, y, z, x + random.randint(50, 100), y + random.randint(50, 100), z + random.randint(50, 100), blocktype)
 
 pos = getposition()
 makeblock(pos)
