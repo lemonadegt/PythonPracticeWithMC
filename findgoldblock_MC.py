@@ -26,7 +26,7 @@ setposition(pos)
 
 starttime = time.clock()
 
-#금블록을 찾을 때까지
+# 금블록을 찾을 때까지
 while mc.getBlock(mc.player.getTilePos()) == 41:
     endtime = time.clock()
     timeGap = endtime - starttime
