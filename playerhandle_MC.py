@@ -34,6 +34,7 @@ while True:
     z = pos.z
     mc.postToChat("GOLD: %d, %d, %d" % (gpos.x, gpos.y, gpos.z))
     mc.postToChat(" NOW: %d, %d, %d" % (x, y, z))
+
     if (int(gpos.x) == int(x)) and (int(gpos.z) == int(z)):
         mc.postToChat("*" * 50)
         break
