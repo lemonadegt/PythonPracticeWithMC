@@ -1,0 +1,13 @@
+점퍼
+
+10개 범위 안에서
+5초마다 순간이동 3번
+하늘에서 떨어지지 않도록 발 아래 금 블록 추가
+
+
+where = random.randint(1,10)
+x = x + where
+y = y + where
+z = z + where
+
+
