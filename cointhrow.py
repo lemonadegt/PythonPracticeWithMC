@@ -17,4 +17,3 @@ for i in range(maxthrowcount):
 print("동전을 던진 횟수는", str(currthrowcount), "입니다.")
 print("앞면은 %d번 나왔으며 확률은 %1.3f%% 입니다" %(coin_front, coin_front/currthrowcount))
 print("뒷면은 %d번 나왔으며 확률은 %1.3f%% 입니다" %(coin_back, coin_back/currthrowcount))
-
