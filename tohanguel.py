@@ -6,7 +6,7 @@ def changetohanguel(nums):
     returnvalue = ''
 
     if len(str(nums)) == 1:
-        returnvalue = numbers[nums]
+        returnvalue = numbers[int(nums)]
     elif len(str(nums)) > 13:
         returnvalue = '세기 힘들어 그만 요청해...!'
     else:

@@ -1,0 +1,3 @@
+﻿print("asdasdasd: %s원" %format(mpay, ',.0f'))
+
+소수점 아래 없이 세자리마다 ,를 출력ㄴ
